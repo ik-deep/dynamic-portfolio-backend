@@ -9,13 +9,13 @@ dotenv.config();
 
 // Initialize Express App
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5050;
 
 // Connect to Database
 connectDB();
 
 // Middleware
-app.use(cors({ origin: 'http://localhost:5173' })); // Adjust origin as needed
+app.use(cors({ origin: 'https://dynamic-portfolio-frontend-lake.vercel.app/' })); // Adjust origin as needed
 app.use(express.json()); // Body parser for JSON
 app.use(express.urlencoded({ extended: true }));
 
