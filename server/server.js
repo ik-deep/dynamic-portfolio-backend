@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 5050;
 connectDB();
 
 // Middleware
-app.use(cors({ origin: 'https://dynamic-portfolio-frontend-lake.vercel.app' })); // Adjust origin as needed
+app.use(cors({ origin: 'https://devfolio-cms.vercel.app' })); // Adjust origin as needed
 app.use(express.json()); // Body parser for JSON
 app.use(express.urlencoded({ extended: true }));
 
